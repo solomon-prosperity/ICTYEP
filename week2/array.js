@@ -68,9 +68,16 @@
 //Split and join : splits converts a string to an array, join converts
 // an array to a string 
 
-let myNames = "Bilbo: Gandalf: Nazgul" ;
-let arr= myNames.split(":");
-arr.forEach(name => {
-    alert (`A message to ${name}`);
-});
+// let myNames = "Bilbo: Gandalf: Nazgul" ;
+// let arr= myNames.split(":");
+// arr.forEach(name => {
+//     alert (`A message to ${name}`);
+// });
 
+let myNames = ["Bilbo", "Gandalf", "Nazgul" ];
+let str = myNames.join(",");
+
+let combine = myNames.join (" - ")
+
+alert (str);
+alert (combine);
