@@ -1,0 +1,35 @@
+#header{background-color:skyblue;
+     height:100px;
+     text-align:left;
+     color:black;
+      font-weight:bold;
+      font-family:'Times New Roman', Times, serif;
+    }
+    #footer{background-color: skyblue; 
+        height:90px;
+        text-align:center;
+        color:black; 
+        font-weight:bold;
+        font-style:italic;
+        margin-top: 70pt;
+        padding-top: 5pt;
+    }
+#image{
+    border: 3px solid skyblue;
+    border-radius:50%;
+    width:200px; height:200px;
+    box-shadow:60px 60px 20px gray;
+    margin-left: 40%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    }
+#paragraph{
+    border: 2px solid black;
+    width: 700px; height: 500px;
+    margin-left: 20%;
+    background-color: skyblue;
+    padding: 5pt 10pt 5pt 10pt;
+    border-radius: 3%;
+    font-size: 15pt;
+    text-align: justify;
+}

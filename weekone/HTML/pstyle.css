@@ -1,0 +1,39 @@
+#header{background-color:skyblue;
+     height:100px;
+     text-align:left;
+     color:black;
+      font-weight:bold;
+      font-family:'Times New Roman', Times, serif;
+    }
+    #footer{background-color: skyblue; 
+        height:90px;
+        text-align:center;
+        color:black; 
+        font-weight:bold;
+        font-style:italic;
+        margin-top: 70pt;
+        padding-top: 5pt;
+    }
+#image{
+    border: 3px solid skyblue;
+    border-radius:50%;
+    width: 200px;; height: 200px;;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    box-shadow:60px 60px 20px gray;
+    }
+#paragraph{
+    border: 2px solid black;
+    width: 700px; height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: skyblue;
+    padding: 5pt 10pt 5pt 10pt;
+    border-radius: 3%;
+    font-size: 15pt;
+    text-align: justify;
+}
