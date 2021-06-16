@@ -83,11 +83,24 @@
 // console.log(combine);
 
 class Users {
-    constructor (name, email) {
+    constructor (name, email , login) {
         this.name = name;
         this.email = email;
+        this.login = login;
+        this.loginMessage = function () {
+            if (this.login === false) {
+                console.log (`${name} is not logged in`)
+            
+            } else {
+                console.log (`${name} is already logged in`)
+            }
+        }
     }
 }
 
-const prosper = new Users ("Prosper" , "prosperoera@gmail.com");
-console.log (prosper.email)
+const prosper = new Users ("Prosper" , "prosperoera@gmail.com" , true);
+const john = new Users ("John" , "johndoe@gmail.com" , false);
+
+
+console.log (prosper.loginMessage());
+console.log (john.loginMessage());
