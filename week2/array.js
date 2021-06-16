@@ -74,10 +74,20 @@
 //     alert (`A message to ${name}`);
 // });
 
-let myNames = ["Bilbo", "Gandalf", "Nazgul" ];
-let str = myNames.join(",");
+// let myNames = ["Bilbo", "Gandalf", "Nazgul" ];
+// let str = myNames.join(",");
 
-let combine = myNames.join (" - ")
+// let combine = myNames.join (" - ")
 
-alert (str);
-alert (combine);
+// console.log(str);
+// console.log(combine);
+
+class Users {
+    constructor (name, email) {
+        this.name = name;
+        this.email = email;
+    }
+}
+
+const prosper = new Users ("Prosper" , "prosperoera@gmail.com");
+console.log (prosper.email)
