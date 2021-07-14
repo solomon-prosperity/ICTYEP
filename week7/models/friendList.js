@@ -1,4 +1,4 @@
-const friendList = [
+let friendList = [
     {
     id : 1 ,
     name: `John Doe` , 
