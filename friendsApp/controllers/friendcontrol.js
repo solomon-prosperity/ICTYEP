@@ -44,7 +44,6 @@ const updateFriend = (req , res) => {
 
 const deleteFriend = (req , res) => {
     const {id} = req.params
-    const { name , age , phoneNo} = req.body
     const friend = friendList.find(friend => friend.id === Number(id))
     if (!friend) {
         res.status(400).json({ success: false , data: `No friend with this id:${id}`})
