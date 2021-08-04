@@ -9,7 +9,7 @@ const signUp =  async (req , res) => {
         let { id , firstName , lastName , email , password} = req.body
         password = await bcrypt.hash(password , 10)
         const token = jwt.sign({id} , process.env.JWT_SECRET , {expiresIn: process.env.JWT_EXPIRES_IN })
-        const newUser = { id , firstName , lastName , email , password}
+        const newUser = { id : User.length + 1 , firstName , lastName , email , password}
         Users.push(newUser)
 
         res.status(200).json({
@@ -27,7 +27,7 @@ const signUp =  async (req , res) => {
 const getUsers = (req , res) => {
     res.status(200).json({
         success: true,
-        data: Users
+        data: User
 })
 }
 

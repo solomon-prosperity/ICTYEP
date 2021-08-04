@@ -5,10 +5,12 @@ const dotenv = require('dotenv')
 dotenv.config({ path: "./config.env"})
 
 const port = process.env.PORT
-const db = require('./db')
+const db = require('./db');
+const { urlencoded } = require('express');
 
 db()
-app.use(express.json())
+app.use (express.urlencoded({extended: false}))
+// app.use(express.json())
 
 app.use('/users' , userRoute)
 
